@@ -17,7 +17,7 @@ export class DeploymentStack extends Stack {
                     connectionArn: GithubConfig.GITHUB_CODESTAR_CONNECTION_ARN
                 }),
                 commands: [
-                    "cd cdk",
+                    "ls",
                     "npm ci",
                     "npm run build",
                     "npx cdk synth"
