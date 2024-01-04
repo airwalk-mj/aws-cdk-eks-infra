@@ -86,7 +86,8 @@ export class EksStack extends Stack {
       vpc: kubeflowVpc,
       defaultCapacity: 2,
       mastersRole: eksClusterMasterRole,
-      defaultCapacityInstance: new InstanceType("m5.xlarge"),
+      //defaultCapacityInstance: new InstanceType("m5.xlarge"),
+      defaultCapacityInstance: new InstanceType("t3.medium"),
       albController: {
         version: albControllerVersion
       },
@@ -138,11 +139,11 @@ export class EksStack extends Stack {
     });
     oidcAuthservice.node.addDependency(istioDeployment);
 
-    const kubeflow = new KubeflowDeployment(this, "KubeflowDeployment", {
-      cluster: cluster,
-      chartAsset: new Asset(this, "KubeflowChart", {
-        path: path.join(__dirname, "../../../charts/kubeflow")
-      }),
-    });
+    //const kubeflow = new KubeflowDeployment(this, "KubeflowDeployment", {
+    //  cluster: cluster,
+    //  chartAsset: new Asset(this, "KubeflowChart", {
+    //    path: path.join(__dirname, "../../../charts/kubeflow")
+    //  }),
+    //});
   }
 }
