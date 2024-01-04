@@ -1,4 +1,4 @@
-import { aws_ec2 as ec2, CfnParameter, Stack, StackProps } from 'aws-cdk-lib';
+import { aws_ec2 as ec2, CfnParameter, Stack, StackProps, Tags } from 'aws-cdk-lib';
 import { InstanceType, SubnetType, Vpc } from 'aws-cdk-lib/aws-ec2';
 import { AlbControllerVersion, Cluster, KubernetesVersion } from 'aws-cdk-lib/aws-eks';
 import { AccountPrincipal, PolicyDocument, PolicyStatement, Role } from 'aws-cdk-lib/aws-iam';
