@@ -1,4 +1,4 @@
-import { Stack, StackProps, Tags } from 'aws-cdk-lib';
+import { aws_ec2 as ec2, CfnParameter, Stack, StackProps } from 'aws-cdk-lib';
 import { InstanceType, SubnetType, Vpc } from 'aws-cdk-lib/aws-ec2';
 import { AlbControllerVersion, Cluster, KubernetesVersion } from 'aws-cdk-lib/aws-eks';
 import { AccountPrincipal, PolicyDocument, PolicyStatement, Role } from 'aws-cdk-lib/aws-iam';
@@ -65,7 +65,7 @@ export class EksStack extends Stack {
 
     const kubeflowVpc = new Vpc(this, "KubeflowVpc", {
       vpcName: "KubeflowVpc",
-      cidr: "10.0.0.0/16",
+      ipAddresses: ec2.IpAddresses.cidr('172.0.0.0/26'),
       maxAzs: 2,
       natGateways: 1,
       subnetConfiguration: [
