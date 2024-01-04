@@ -17,16 +17,13 @@ export class DeploymentStack extends Stack {
                     connectionArn: GithubConfig.GITHUB_CODESTAR_CONNECTION_ARN
                 }),
                 commands: [
-                    'printenv',
-                    'npm install',
-                    'ls -la',
-                    'npm ci',
-                    'ls -la',    
+                    'cd cdk',
+                    'npm ci', 
                     'npm run build',
-                    'npx cdk --version',
-                    'npx cdk synth --verbose --trace',
+                    'npx cdk synth',
+                    'ls'
                 ],
-                primaryOutputDirectory: "cdk.out"
+                //primaryOutputDirectory: "cdk.out"
             })
         });
 
