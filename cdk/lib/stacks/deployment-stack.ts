@@ -18,6 +18,8 @@ export class DeploymentStack extends Stack {
                 }),
                 commands: [
                     'printenv',
+                    'npm install',
+                    'ls -la',
                     'npm ci',
                     'ls -la',    
                     'npm run build',
