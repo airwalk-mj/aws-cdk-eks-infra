@@ -25,7 +25,7 @@ export interface EksStackProps extends StackProps {
 export class EksStack extends Stack {
 
   private readonly DEFAULT_CLUSTER_NAME = "KubeflowCluster";
-  private readonly DEFAULT_KUBERNETES_VERSION = KubernetesVersion.V1_19;
+  private readonly DEFAULT_KUBERNETES_VERSION = KubernetesVersion.V1_28;
   private readonly DEFAULT_ALB_CONTROLLER_VERSION = AlbControllerVersion.V2_3_1;
 
   constructor(scope: Construct, id: string, props?: EksStackProps) {

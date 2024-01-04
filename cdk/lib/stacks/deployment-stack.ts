@@ -17,14 +17,15 @@ export class DeploymentStack extends Stack {
                     connectionArn: GithubConfig.GITHUB_CODESTAR_CONNECTION_ARN
                 }),
                 commands: [
-                    "ls",
-                    "npm ci",
-                    "npm run build",
-                    "npx cdk synth"
+                    'printenv',
+                    'npm ci',
+                    'ls -la',    
+                    'npm run build',
+                    'npx cdk --version',
+                    'npx cdk synth --verbose --trace',
                 ],
-                primaryOutputDirectory: "cdk/cdk.out"
+                primaryOutputDirectory: "cdk.out"
             })
-
         });
 
         const eksDeploymentStage = new EksDeploymentStage(this, "EksDeploymentStage", {
