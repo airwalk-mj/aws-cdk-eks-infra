@@ -1,0 +1,726 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "DeploymentStackEksDeploymentStageEksStack429E6A5E.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "DeploymentStackEksDeploymentStageEksStack429E6A5E.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "DeploymentStackEksDeploymentStageEksStack429E6A5E": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://544294979223/eu-west-1",
+      "properties": {
+        "templateFile": "DeploymentStackEksDeploymentStageEksStack429E6A5E.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": true,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::544294979223:role/cdk-hnb659fds-deploy-role-544294979223-eu-west-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::544294979223:role/cdk-hnb659fds-cfn-exec-role-544294979223-eu-west-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-544294979223-eu-west-1/b7100d30eed0facf5452865eae9525369f1abddf429f5b02a57b7409fd8346c6.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "DeploymentStackEksDeploymentStageEksStack429E6A5E.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::544294979223:role/cdk-hnb659fds-lookup-role-544294979223-eu-west-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        },
+        "stackName": "EksDeploymentStage-EksStack"
+      },
+      "dependencies": [
+        "DeploymentStackEksDeploymentStageEksStack429E6A5E.assets"
+      ],
+      "metadata": {
+        "/DeploymentStack/EksDeploymentStage/EksStack/EksClusterMasterRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksClusterMasterRoleFC40F478"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpc1DC3CF47"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PrivateSubnetSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPrivateSubnetSubnet1Subnet30992482"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PrivateSubnetSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPrivateSubnetSubnet1RouteTable44B7DBBF"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PrivateSubnetSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPrivateSubnetSubnet1RouteTableAssociation70736734"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PrivateSubnetSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPrivateSubnetSubnet1DefaultRoute58F3EBD0"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PrivateSubnetSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPrivateSubnetSubnet2SubnetCF50BC5A"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PrivateSubnetSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPrivateSubnetSubnet2RouteTable4776FB40"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PrivateSubnetSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPrivateSubnetSubnet2RouteTableAssociation2BA7EACF"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PrivateSubnetSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPrivateSubnetSubnet2DefaultRouteFCA99DB7"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PublicSubnetSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPublicSubnetSubnet1Subnet9172F8FC"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PublicSubnetSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPublicSubnetSubnet1RouteTable1ED8D8CB"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PublicSubnetSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPublicSubnetSubnet1RouteTableAssociation97F5151A"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PublicSubnetSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPublicSubnetSubnet1DefaultRoute2390CF54"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PublicSubnetSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPublicSubnetSubnet1EIPBFE1BAF0"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PublicSubnetSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPublicSubnetSubnet1NATGateway8B063436"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PublicSubnetSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPublicSubnetSubnet2SubnetE13EC708"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PublicSubnetSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPublicSubnetSubnet2RouteTable62A3526B"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PublicSubnetSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPublicSubnetSubnet2RouteTableAssociationC51F2E6E"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/PublicSubnetSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcPublicSubnetSubnet2DefaultRouteDC5F6441"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcIGW70D77C40"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowVpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowVpcVPCGW0E9B9F0E"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "You created a cluster with Kubernetes Version 1.28 without specifying the kubectlLayer property. This may cause failures as the kubectl version provided with aws-cdk-lib is 1.20, which is only guaranteed to be compatible with Kubernetes versions 1.19-1.21. Please provide a kubectlLayer from @aws-cdk/lambda-layer-kubectl-v28. [ack: @aws-cdk/aws-eks:clusterKubectlLayerNotSpecified]",
+            "trace": [
+              "Annotations.addMessage (/Users/mark/git/aws-cdk-eks-infra/cdk/node_modules/aws-cdk-lib/core/lib/annotations.js:1:1608)",
+              "Annotations.addWarningV2 (/Users/mark/git/aws-cdk-eks-infra/cdk/node_modules/aws-cdk-lib/core/lib/annotations.js:1:825)",
+              "new Cluster (/Users/mark/git/aws-cdk-eks-infra/cdk/node_modules/aws-cdk-lib/aws-eks/lib/cluster.js:1:9470)",
+              "new EksStack (/Users/mark/git/aws-cdk-eks-infra/cdk/lib/stacks/eks-stack.ts:83:21)",
+              "new EksDeploymentStage (/Users/mark/git/aws-cdk-eks-infra/cdk/lib/stages/eks-deployment-stage.ts:9:7)",
+              "new DeploymentStack (/Users/mark/git/aws-cdk-eks-infra/cdk/lib/stacks/deployment-stack.ts:30:36)",
+              "Object.<anonymous> (/Users/mark/git/aws-cdk-eks-infra/cdk/bin/cdk.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Module.m._compile (/Users/mark/git/aws-cdk-eks-infra/cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/mark/git/aws-cdk-eks-infra/cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "main (/Users/mark/git/aws-cdk-eks-infra/cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/mark/git/aws-cdk-eks-infra/cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1376:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1435:10)",
+              "Module.load (node:internal/modules/cjs/loader:1207:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1023:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/KubectlHandlerRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterKubectlHandlerRole61AB0E7E"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/KubectlHandlerRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterKubectlHandlerRoleDefaultPolicy4B36361F"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterRoleBB9EADEE"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/ControlPlaneSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterControlPlaneSecurityGroupF9285993"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/Resource/CreationRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterCreationRoleBD5E6AB4"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/Resource/CreationRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterCreationRoleDefaultPolicyA82CD36F"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/Resource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowCluster4458554C"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/KubectlReadyBarrier": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterKubectlReadyBarrier3E0ECD00"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/HasEcrPublic": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterHasEcrPublic2989E205"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/ClusterName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterClusterName731D87CA"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/AwsAuth/manifest/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterAwsAuthmanifest808C6004"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/OpenIdConnectProvider/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterOpenIdConnectProvider5C83DEBA"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/NodegroupDefaultCapacity/NodeGroupRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterNodegroupDefaultCapacityNodeGroupRole0872784B"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/NodegroupDefaultCapacity/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterNodegroupDefaultCapacity3ED64646"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/ConfigCommand": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterConfigCommandD14DCE5C"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/GetTokenCommand": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterGetTokenCommand320B7F1C"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/chart-CertManagerDeployment/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterchartCertManagerDeploymentF3CE3DD9"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/chart-IstioDeployment-base/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterchartIstioDeploymentbase0E80E541"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/chart-IstioDeployment-istiod/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterchartIstioDeploymentistiodD6851F4F"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/chart-IstioIngressDeployment/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterchartIstioIngressDeployment10D11B00"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/chart-SecretsProviderDeploymentCsiDriver/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterchartSecretsProviderDeploymentCsiDriverC66B6A7E"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/manifest-SecretsProviderDeploymentAscpServiceAccount/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClustermanifestSecretsProviderDeploymentAscpServiceAccount4BA30DC2"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/manifest-SecretsProviderDeploymentAscpClusterRole/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClustermanifestSecretsProviderDeploymentAscpClusterRoleF6752FA2"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/manifest-SecretsProviderDeploymentAscpClusterRoleBinding/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClustermanifestSecretsProviderDeploymentAscpClusterRoleBinding10F71491"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/manifest-SecretsProviderDeploymentAscpDaemonset/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClustermanifestSecretsProviderDeploymentAscpDaemonsetD010C07E"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/manifest-DexNamespace/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClustermanifestDexNamespace7029D8F4"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/DexServiceAccount/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterDexServiceAccountConditionJson9A6C3CD1"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/DexServiceAccount/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterDexServiceAccountRole3EFC1F5F"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/DexServiceAccount/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterDexServiceAccountRoleDefaultPolicy1FA32B8F"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/DexServiceAccount/manifest-DexServiceAccountServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterDexServiceAccountmanifestDexServiceAccountServiceAccountResource04335CB9"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/chart-DexDeployment/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterchartDexDeployment398195A7"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/AuthServiceServiceAccount/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterAuthServiceServiceAccountConditionJsonD427AFE6"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/AuthServiceServiceAccount/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterAuthServiceServiceAccountRole2E7F4210"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/AuthServiceServiceAccount/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterAuthServiceServiceAccountRoleDefaultPolicy193EF02B"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/AuthServiceServiceAccount/manifest-AuthServiceServiceAccountServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterAuthServiceServiceAccountmanifestAuthServiceServiceAccountServiceAccountResourceE4504582"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/KubeflowCluster/chart-AuthServiceDeployment/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubeflowClusterchartAuthServiceDeployment3FD0BB83"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/NodeProxyAgentLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NodeProxyAgentLayer924C1971"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/OnEventHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OnEventHandlerServiceRole15A26729"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/OnEventHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "OnEventHandler42BEBAE0"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/IsCompleteHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IsCompleteHandlerServiceRole5810CC58"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/IsCompleteHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IsCompleteHandler7073F4DA"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onEvent/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEventServiceRole9FF04296"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onEvent/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEventServiceRoleDefaultPolicy48CD2133"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEvent83C1D0A7"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-isComplete/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkisCompleteServiceRoleB1087139"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-isComplete/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkisCompleteServiceRoleDefaultPolicy2E7140AC"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-isComplete/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkisComplete26D7B0CB"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onTimeout/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonTimeoutServiceRole28643D26"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onTimeout/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonTimeoutServiceRoleDefaultPolicy2688969F"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onTimeout/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonTimeout0B47CA38"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/waiter-state-machine/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderwaiterstatemachineRole0C7159F9"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/waiter-state-machine/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderwaiterstatemachineRoleDefaultPolicyD3C3DA1A"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/waiter-state-machine/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderwaiterstatemachineLogGroupDD693A98"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/waiter-state-machine/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Providerwaiterstatemachine5D4A9DF0"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/DeploymentStackEksDeploymentStageEksStackawscdkawseksClusterResourceProviderOnEventHandlerServiceRole90076784Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentStackEksDeploymentStageEksStackawscdkawseksClusterResourceProviderOnEventHandlerServiceRole90076784Arn"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/DeploymentStackEksDeploymentStageEksStackawscdkawseksClusterResourceProviderIsCompleteHandlerServiceRoleBCAF28D8Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentStackEksDeploymentStageEksStackawscdkawseksClusterResourceProviderIsCompleteHandlerServiceRoleBCAF28D8Arn"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider/DeploymentStackEksDeploymentStageEksStackawscdkawseksClusterResourceProviderframeworkonEvent05A981F9Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentStackEksDeploymentStageEksStackawscdkawseksClusterResourceProviderframeworkonEvent05A981F9Arn"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStack/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awscdkawseksClusterResourceProviderNestedStackawscdkawseksClusterResourceProviderNestedStackResource9827C454"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.KubectlProvider/Handler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Handler886CB40B"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.KubectlProvider/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AwsCliLayerF44AAF94"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.KubectlProvider/KubectlLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "KubectlLayer600207B5"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.KubectlProvider/Provider/framework-onEvent/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEventServiceRole9FF04296"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.KubectlProvider/Provider/framework-onEvent/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEventServiceRoleDefaultPolicy48CD2133"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.KubectlProvider/Provider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ProviderframeworkonEvent83C1D0A7"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.KubectlProvider/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.KubectlProvider/DeploymentStackEksDeploymentStageEksStackawscdkawseksKubectlProviderframeworkonEventB7BE3DBBArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentStackEksDeploymentStageEksStackawscdkawseksKubectlProviderframeworkonEventB7BE3DBBArn"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.KubectlProvider/reference-to-DeploymentStackEksDeploymentStageEksStackKubeflowClusterKubectlHandlerRole7E77D94AArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoDeploymentStackEksDeploymentStageEksStackKubeflowClusterKubectlHandlerRole7E77D94AArn"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.KubectlProvider/reference-to-DeploymentStackEksDeploymentStageEksStackKubeflowVpcPrivateSubnetSubnet1SubnetF7A3BCF8Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoDeploymentStackEksDeploymentStageEksStackKubeflowVpcPrivateSubnetSubnet1SubnetF7A3BCF8Ref"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.KubectlProvider/reference-to-DeploymentStackEksDeploymentStageEksStackKubeflowVpcPrivateSubnetSubnet2Subnet5C127904Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoDeploymentStackEksDeploymentStageEksStackKubeflowVpcPrivateSubnetSubnet2Subnet5C127904Ref"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.KubectlProvider/reference-to-DeploymentStackEksDeploymentStageEksStackKubeflowClusterD0ACF7B2ClusterSecurityGroupId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoDeploymentStackEksDeploymentStageEksStackKubeflowClusterD0ACF7B2ClusterSecurityGroupId"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/@aws-cdk--aws-eks.KubectlProvider.NestedStack/@aws-cdk--aws-eks.KubectlProvider.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awscdkawseksKubectlProviderNestedStackawscdkawseksKubectlProviderNestedStackResourceA7AEBA6B"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/DeploymentStackEksDeploymentStageEksStackKubeflowCluster4D9267B3-AlbController/alb-sa/ConditionJson/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentStackEksDeploymentStageEksStackKubeflowCluster4D9267B3AlbControlleralbsaConditionJsonD9EBC4B7"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/DeploymentStackEksDeploymentStageEksStackKubeflowCluster4D9267B3-AlbController/alb-sa/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentStackEksDeploymentStageEksStackKubeflowCluster4D9267B3AlbControlleralbsaRole09755863"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/DeploymentStackEksDeploymentStageEksStackKubeflowCluster4D9267B3-AlbController/alb-sa/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentStackEksDeploymentStageEksStackKubeflowCluster4D9267B3AlbControlleralbsaRoleDefaultPolicy649994B0"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/DeploymentStackEksDeploymentStageEksStackKubeflowCluster4D9267B3-AlbController/alb-sa/manifest-alb-saServiceAccountResource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentStackEksDeploymentStageEksStackKubeflowCluster4D9267B3AlbControlleralbsamanifestalbsaServiceAccountResourceD279BD30"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/DeploymentStackEksDeploymentStageEksStackKubeflowCluster4D9267B3-AlbController/Resource/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentStackEksDeploymentStageEksStackKubeflowCluster4D9267B3AlbControllerD3AF15F1"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/Custom::AWSCDKOpenIdConnectProviderCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderRole517FED65"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/Custom::AWSCDKOpenIdConnectProviderCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomAWSCDKOpenIdConnectProviderCustomResourceProviderHandlerF2C543E0"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/AWSCDKCfnUtilsProviderCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSCDKCfnUtilsProviderCustomResourceProviderRoleFE0EE867"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/AWSCDKCfnUtilsProviderCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSCDKCfnUtilsProviderCustomResourceProviderHandlerCF82AA57"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/IstioDeployment/IstioNamespace/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IstioDeploymentIstioNamespace0B5BA720"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/DexDeployment/ClientCredentials/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DexDeploymentClientCredentials94A58EDB"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/AuthServiceDeployment/IstioNamespace/Resource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthServiceDeploymentIstioNamespaceBE837586"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentStage/EksStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "DeploymentStack/EksDeploymentStage/EksStack"
+    }
+  }
+}

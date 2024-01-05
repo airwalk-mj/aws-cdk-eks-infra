@@ -1,0 +1,252 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "assembly-DeploymentStack-EksDeploymentStage": {
+      "type": "cdk:cloud-assembly",
+      "properties": {
+        "directoryName": "assembly-DeploymentStack-EksDeploymentStage",
+        "displayName": "DeploymentStack/EksDeploymentStage"
+      }
+    },
+    "DeploymentStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "DeploymentStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "DeploymentStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://544294979223/eu-west-1",
+      "properties": {
+        "templateFile": "DeploymentStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::544294979223:role/cdk-hnb659fds-deploy-role-544294979223-eu-west-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::544294979223:role/cdk-hnb659fds-cfn-exec-role-544294979223-eu-west-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-544294979223-eu-west-1/30a1ecd77d5a2e16430ade31189b98754621b98c89357ff0fcf98683582ed68d.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "DeploymentStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::544294979223:role/cdk-hnb659fds-lookup-role-544294979223-eu-west-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "DeploymentStack.assets"
+      ],
+      "metadata": {
+        "/DeploymentStack/EksDeploymentPipeline/Pipeline/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineArtifactsBucketD1ACEAF9"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Pipeline/ArtifactsBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineArtifactsBucketPolicy99A41000"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Pipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineRoleBCA48E23"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Pipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineRoleDefaultPolicyD083F0EA"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Pipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipeline60061839"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Pipeline/Source/airwalk-mj_aws-cdk-eks-infra/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineSourceairwalkmjawscdkeksinfraCodePipelineActionRoleD18DF5A6"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Pipeline/Source/airwalk-mj_aws-cdk-eks-infra/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineSourceairwalkmjawscdkeksinfraCodePipelineActionRoleDefaultPolicy94A23F0A"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Pipeline/Build/Synth/CdkBuildProject/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineBuildSynthCdkBuildProjectRoleABEC47AA"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Pipeline/Build/Synth/CdkBuildProject/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineBuildSynthCdkBuildProjectRoleDefaultPolicyBF130FDC"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Pipeline/Build/Synth/CdkBuildProject/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineBuildSynthCdkBuildProject1C8101F0"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/CodeBuildActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineCodeBuildActionRole2BB704FE"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/CodeBuildActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineCodeBuildActionRoleDefaultPolicyB91304AE"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/UpdatePipeline/SelfMutation/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineUpdatePipelineSelfMutationRoleAD1CC43A"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/UpdatePipeline/SelfMutation/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineUpdatePipelineSelfMutationRoleDefaultPolicy0BC615B7"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/UpdatePipeline/SelfMutation/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineUpdatePipelineSelfMutationF467BF13"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileRoleA7C576D5"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileRoleDefaultPolicy2FDCFDB3"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileAsset1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileAsset1A89B1ED3"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileAsset10/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileAsset101961BCE5"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileAsset11/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileAsset1189E0D4E8"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileAsset12/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileAsset1227F92DCC"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileAsset13/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileAsset13FD425D0D"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileAsset2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileAsset2BD40B408"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileAsset3/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileAsset3E249B228"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileAsset4/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileAsset455B833EB"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileAsset5/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileAsset5B07A840B"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileAsset6/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileAsset6123DA198"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileAsset7/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileAsset7B102BE22"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileAsset8/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileAsset8D7AEDB2B"
+          }
+        ],
+        "/DeploymentStack/EksDeploymentPipeline/Assets/FileAsset9/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EksDeploymentPipelineAssetsFileAsset9E6949E7C"
+          }
+        ],
+        "/DeploymentStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/DeploymentStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/DeploymentStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "DeploymentStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
