@@ -23,7 +23,7 @@ export class DeploymentStack extends Stack {
                     'npx cdk synth',
                     'ls'
                 ],
-                //primaryOutputDirectory: "cdk.out"
+                primaryOutputDirectory: "cdk.out"
             })
         });
 
