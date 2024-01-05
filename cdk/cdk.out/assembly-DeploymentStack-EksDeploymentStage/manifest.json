@@ -177,7 +177,7 @@
               "new Cluster (/Users/mark/git/aws-cdk-eks-infra/cdk/node_modules/aws-cdk-lib/aws-eks/lib/cluster.js:1:9470)",
               "new EksStack (/Users/mark/git/aws-cdk-eks-infra/cdk/lib/stacks/eks-stack.ts:83:21)",
               "new EksDeploymentStage (/Users/mark/git/aws-cdk-eks-infra/cdk/lib/stages/eks-deployment-stage.ts:9:7)",
-              "new DeploymentStack (/Users/mark/git/aws-cdk-eks-infra/cdk/lib/stacks/deployment-stack.ts:30:36)",
+              "new DeploymentStack (/Users/mark/git/aws-cdk-eks-infra/cdk/lib/stacks/deployment-stack.ts:29:36)",
               "Object.<anonymous> (/Users/mark/git/aws-cdk-eks-infra/cdk/bin/cdk.ts:8:1)",
               "Module._compile (node:internal/modules/cjs/loader:1376:14)",
               "Module.m._compile (/Users/mark/git/aws-cdk-eks-infra/cdk/node_modules/ts-node/src/index.ts:1056:23)",
