@@ -20,10 +20,9 @@ export class DeploymentStack extends Stack {
                     'cd cdk',
                     'npm ci', 
                     'npm run build',
-                    'npx cdk synth',
-                    'ls'
+                    'npx cdk synth'
                 ],
-                primaryOutputDirectory: "cdk.out"
+                primaryOutputDirectory: "cdk/cdk.out"
             })
         });
 
